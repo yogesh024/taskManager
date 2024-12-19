@@ -47,15 +47,15 @@ export const createTaskModel = async(sequelize) => {
         },
     }, 
     {
-        tableName: 'tasks', // Specify table name
-        timestamps: true,   // Enable Sequelize to manage `createdAt` and `updatedAt` fields
-        underscored: true   // Use snake_case column names
+        tableName: 'tasks', 
+        timestamps: true,   
+        underscored: true   
     }
 );
 TaskModel.belongsTo(UserModel, {
     foreignKey: 'assignedTo',
     targetKey: 'id',
-    onDelete: 'CASCADE', // Ensures tasks are deleted if the user is deleted
+    onDelete: 'CASCADE', //it  Ensures tasks are deleted if the user is deleted
 });
 
     return TaskModel;

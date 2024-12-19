@@ -11,11 +11,8 @@ userRoute.post("/users", addUser);
 userRoute.get("/users/:id", getUserId);
 userRoute.get("/usersall", getAllUsers);
 
-
-// Update 
 userRoute.put("/users/:id", updateUser);
 
-// Delete 
 userRoute.delete("/users/:id", deleteUser);
 
 

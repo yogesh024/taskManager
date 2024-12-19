@@ -25,10 +25,8 @@ router.delete("/tasks/:id", deleteTask);
 
 router.post("/users", addUser);
 
-// Update 
 router.put("/users/:id", updateUser);
 
-// Delete 
 router.delete("/users/:id", deleteUser);
 
 
